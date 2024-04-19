@@ -10,6 +10,9 @@ export default function Invoice() {
   const [customerName, setCustomerName] = useState('');
   const [productName, setProductName] = useState('');
   const [quantity, setQuantity] = useState();
+  const [address, setAddress] = useState();
+  const [date, setDate] = useState();
+  const [number, setNumber] = useState();
   const [unitPrice, setUnitPrice] = useState();
   const [totalPrice, setTotalPrice] = useState(0);
   const [paymentStatus, setPaymentStatus] = useState('Pending');
@@ -37,6 +40,9 @@ export default function Invoice() {
         body: JSON.stringify({
           customerName,
           productName,
+          address,
+          date,
+          number,
           quantity,
           unitPrice,
           totalPrice,
@@ -83,6 +89,36 @@ export default function Invoice() {
           id="productName"
           value={productName}
           onChange={(e) => setProductName(e.target.value)}
+          className="input input-bordered"
+        />
+      </div>
+      <div>
+        <label htmlFor="address" className="block  text-black text-sm font-medium ">Bill To:</label>
+        <input
+          type="text"
+          id="address"
+          value={address}
+          onChange={(e) => setAddress(e.target.value)}
+          className="input input-bordered"
+        />
+      </div>
+      <div>
+        <label htmlFor="date" className="block  text-black text-sm font-medium ">Date:</label>
+        <input
+          type="date"
+          id="date"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
+          className="input input-bordered"
+        />
+      </div>
+      <div>
+        <label htmlFor="number" className="block text-black text-sm font-medium ">Invoice No:</label>
+        <input
+          type="number"
+          id="number"
+          value={number}
+          onChange={(e) => setNumber(e.target.value)}
           className="input input-bordered"
         />
       </div>
@@ -138,6 +174,9 @@ export default function Invoice() {
         invoice={{
           customerName,
           productName,
+          address,
+          date,
+          number,
           quantity,
           unitPrice,
           totalPrice,
