@@ -62,6 +62,7 @@ const Navbar = () => {
           className="fixed top-0 left-0 h-full w-44 bg-black  bg-opacity-70 backdrop-blur-sm  p-4 flex flex-col"
         >
           <ul className=" space-y-8 mt-7">
+          {authUser?.role === "Admin" && (
             <li>
               
               <Link href="/dashboard" className="text-xl  gap-2 flex flex-row text-white" onClick={closeSidebar}>
@@ -71,6 +72,7 @@ const Navbar = () => {
                
               </Link>
             </li>
+               )}
             <li>
               
               <Link href="/invoice" className="text-xl gap-2 flex flex-row text-white" onClick={closeSidebar}>
@@ -80,7 +82,7 @@ const Navbar = () => {
                
               </Link>
             </li>
-            {authUser?.role === "Admin" && ( // Render the report link only for admin users
+            {/* {authUser?.role === "Admin" && ( // Render the report link only for admin users
                   <li>
                     <Link href="/report" className="text-xl gap-2 flex flex-row text-white" onClick={closeSidebar}>
                     <BiSolidReport size={24} />
@@ -88,7 +90,7 @@ const Navbar = () => {
                       Report
                     </Link>
                   </li>
-                )}
+                )} */}
             
           </ul>
         </div>
@@ -106,18 +108,12 @@ const Navbar = () => {
     />
   </div>
       <div className="flex-1">
-        <Link href={token ? "/dashboard" : "/ "} className="btn btn-ghost normal-case text-4xl text-blue-700 mt-3">
+        <Link href={token ? (authUser.role === 'Admin' ? '/dashboard' : '/invoice') : '/ '} className="btn btn-ghost normal-case text-4xl text-blue-700 mt-3">
         BillBlaze
         </Link>
       </div>
       <div className="flex-none gap-2">
-        {/* <div className="form-control">
-          <input
-            type="text"
-            placeholder="Search"
-            className="input input-bordered w-24 md:w-auto"
-          />
-        </div> */}
+        
         {!token && (
     <li style={{ listStyleType: 'none' }}>
       <Link href="/signUp" style={{ display: 'none' }}>

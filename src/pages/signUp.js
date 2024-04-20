@@ -104,42 +104,6 @@ const handleChange = (e) => {
   
 
   return (
-    // <div className="flex justify-center items-center h-screen bg-cover bg-center">
-    //   <div className="p-8 rounded-lg shadow-lg">
-    //     <h1 className="text-3xl font-semibold mb-4">Sign Up</h1>
-    //     <input
-    //       type="text"
-    //       name="email"
-    //       placeholder="Email"
-    //       value={email}
-    //       onChange={handleChange}
-    //       className="w-full px-3 py-2 mb-3 border rounded-md focus:outline-none"
-    //     />
-    //     <input
-    //       type="password"
-    //       name="password"
-    //       placeholder="Password"
-    //       value={password}
-    //       onChange={handleChange}
-    //       className="w-full px-3 py-2 mb-3 borderrounded-md focus:outline-none"
-    //     />
-    //     <input
-    //       type="password"
-    //       name="confirmPassword"
-    //       placeholder="Confirm Password"
-    //       value={confirmPassword}
-    //       onChange={handleChange}
-    //       className="w-full px-3 py-2 mb-3 border rounded-md focus:outline-none"
-    //     />
-    //     <button
-    //       onClick={handleSignup}
-    //       className="w-full px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none"
-    //     >
-    //       Signup
-    //     </button>
-    //     {error && <p className="text-red-500 mt-2">{error}</p>}
-    //   </div>
-    // </div>
     <div className="relative">
       <div
         className="absolute inset-0 bg-cover bg-center z-0"
