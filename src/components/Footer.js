@@ -6,7 +6,7 @@ const Footer = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <footer className="bg-base-200 w-full p-8 mx-auto bg-gradient-to-r from-cyan-900 to-cyan-950 border-t-2">
+    <footer className="bg-base-200 w-full p-8 mx-auto bg-gradient-to-r from-violet-800 to-purple-300 border-t-2">
       {/* Grid */}
       <div className="text-center">
 

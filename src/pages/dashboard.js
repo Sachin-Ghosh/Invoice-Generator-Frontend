@@ -116,36 +116,36 @@ const Dashboard = () => {
 
 
   return (
-    <div className="bg-gradient-to-r from-cyan-900 to-cyan-950 min-h-screen mx-auto px-8 py-16 ">
-      <div className="flex justify-between pt-2 bg-white bg-opacity-25 mb-6 rounded-xl mt-10">
-        <h1 className=" text-bold shadow-2xl bg-cyan-50 bg-opacity-65 rounded-lg pt-4 mt-4 ml-4 pb-5 pr-5 pl-5 text-3xl text-neutral font-semibold mb-6 flex align-middle">
-          <MdDashboardCustomize  size={45}/>
-         INVOICE DASHBOARD</h1>
+    <div className="bg-gradient-to-r from-violet-800 to-purple-300  min-h-screen mx-auto px-8 py-16 ">
+      
+      <h1 className=" text-bold  bg-gradient-to-r from-white to-purple-300 bg-opacity-65 rounded-lg pt-4 mt-4 ml-4 pb-5 pr-5 pl-5 text-3xl text-neutral font-semibold mb-6 flex align-middle">
+          <MdDashboardCustomize   size={45}/>
+        ADMIN DASHBOARD</h1>
         {/* {isLoggedIn && (
           <button onClick={handleLogout} className="text-gray-600 hover:text-red-500">
             Logout
           </button>
         )} */}
-      </div>
+     
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-xl text-white bg-slate-500 rounded-xl pl-3 mb-3 shadow-2xl pb-2 pt-2 font-bold">
+          <h2 className="text-xl text-black bg-gradient-to-r from-white to-purple-300 rounded-xl pl-3 mb-3 pb-2 pt-2 shadow-2xl font-bold">
             Invoice Overview
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="bg-slate-500 rounded-xl p-3 shadow-2xl">
-              <h3 className="text-lg font-semibold text-white">
+            <div className="bg-gradient-to-r from-white to-purple-300 rounded-xl p-3 shadow-2xl">
+              <h3 className="text-lg font-semibold text-black">
                 Total Invoices :
               </h3>
-              <p className="text-2xl font-bold text-blue-400">{ProductData}</p>
+              <p className="text-2xl font-bold text-green-600">{ProductData}</p>
 
               {/* <p className="text-2xl font-bold text-blue-600">{inventoryOverview.totalProducts}</p> */}
             </div>
-            <div className="bg-slate-500 rounded-xl p-3 shadow-2xl">
-              <h3 className="text-lg font-semibold text-white">
+            <div className="bg-gradient-to-r from-white to-purple-300 rounded-xl p-3 shadow-2xl">
+              <h3 className="text-lg font-semibold text-black">
                 Total Products :
               </h3>
-              <p className="text-2xl font-bold text-blue-400">{totalQuantity}</p>
+              <p className="text-2xl font-bold  text-green-600">{totalQuantity}</p>
             </div>
           </div>
         </div>
@@ -166,35 +166,35 @@ const Dashboard = () => {
         </div>
       </section>
 
-      <section className="mt-10 mb-8 flex justify-end items-center ">
-        <div className='bg-blend-normal  bg-white bg-opacity-25 '>
-        <label className="input input-bordered border-4 flex items-center justify-end gap-2 bg-transparent text-black">
+      <section className="mt-10 mb-8 flex justify-start items-center ">
+        <div className='rounded-3xl bg-white  '>
+        <label className="input input-bordered flex items-center gap-2 bg-transparent text-black">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70"><path fillRule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clipRule="evenodd" /></svg>
           <input type="text" className="grow text-gray-800 placeholder:text-black placeholder:opacity-45" placeholder="Search by Company name" value={searchQuery} onChange={handleSearch} />
-          <span className="badge badge-info">Search</span>
+          <span className="badge badge-info bg-green-500">Search</span>
         </label>
         </div>
       </section>
       <section>
       <div className="bg-white p-6 rounded-lg shadow-md">
-        <h2 className="text-xl text-white bg-slate-500 rounded-xl pl-3 mb-3 shadow-2xl pb-2 pt-2 font-bold">Latest Invoices</h2>
+        <h2 className="text-xl text-black bg-gradient-to-r from-white to-purple-300 rounded-xl pl-3 mb-3 shadow-2xl pb-2 pt-2 font-bold">Latest Invoices</h2>
         
         {filteredProducts.length > 0 ? (
-    <table className="w-full  bg-slate-500 rounded-xl pl-3 mb-3 shadow-2xl">
+    <table className="w-full  bg-gradient-to-r from-white to-purple-300 rounded-xl pl-3 mb-3 shadow-2xl">
       <thead>
         <tr>
-        <th className="text-left pl-3">No.</th>
-        <th className="text-left">Company Name</th>
-          <th className="text-left">Product</th>
-          <th className="text-left">Unit Price</th>
-          <th className="text-left">Quantity</th>
-          <th className="text-left">Payment Status</th>
+        <th className="text-left text-black pl-3">No.</th>
+        <th className="text-left text-black" >Company Name</th>
+          <th className="text-left text-black" text-black>Product</th>
+          <th className="text-left text-black">Unit Price</th>
+          <th className="text-left text-black">Quantity</th>
+          <th className="text-left text-black">Payment Status</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody className='text-black'>
         {filteredProducts.map((invoice, index) => (
           <tr key={invoice.id}>
-                      <td className="pl-3">{index + 1}</td>
+                      <td className="pl-3 ">{index + 1}</td>
           <td>{invoice.customerName}</td>
             <td>{invoice.productName}</td>
             <td>{invoice.unitPrice}</td>
@@ -205,7 +205,7 @@ const Dashboard = () => {
       </tbody>
     </table>
   ) : (
-    <p className=' bg-slate-500 rounded-3xl pl-3 mb-3 shadow-2xl'>No invoices found</p>
+    <p className='  rounded-3xl bg-gradient-to-r from-black to-purple-300 pl-3 mb-3 shadow-2xl'>No invoices found</p>
   )}
   </div>
       </section>

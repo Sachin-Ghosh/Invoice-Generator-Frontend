@@ -63,10 +63,11 @@ export default function Invoice() {
 
   return (
     
-    <div className=" bg-gradient-to-r from-cyan-900 to-cyan-950 gap-x-60 px-4 py-8">
-     <div className='flex justify-between pt-2 bg-white bg-opacity-25 mb-3 rounded-xl mt-11'>
-      <h1 className=' text-bold shadow-2xl bg-cyan-50 bg-opacity-65 rounded-lg  pt-4 mt-4 ml-4 pb-5 pr-5 pl-5 text-3xl  text-neutral font-semibold mb-6 flex align-middle gap-3'><LiaFileInvoiceDollarSolid size={45} />Invoice Generator</h1>
-      </div>
+    <div className=" bg-gradient-to-r from-violet-800 to-purple-300  gap-x-60 px-4 py-8">
+     <div className='mt-14'>
+      <h1 className=' text-bold  bg-gradient-to-r from-white to-purple-300 bg-opacity-65 gap-4 rounded-lg pt-4 mt-4 ml-4 pb-5 pr-5 pl-5 text-3xl text-neutral font-semibold mb-6 flex align-middle'>
+        <LiaFileInvoiceDollarSolid size={45} />BILL GENERATOR</h1>
+   </div>
       {/* Form Section */}
       <div className='flex align-middle gap-x-60 px-4 py-8 '>
       <div className=" w-80  bg-white">

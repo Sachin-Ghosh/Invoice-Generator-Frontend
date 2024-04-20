@@ -35,7 +35,7 @@ export default function Home() {
 
 
     {/* hero section */}
-    <div className="hero bg-gradient-to-r from-cyan-900 to-cyan-950 mx-auto px-4 min-h-screen sm:px-6 lg:px-8">
+    <div className="hero bg-gradient-to-r from-violet-800 to-purple-300  mx-auto px-4 min-h-screen sm:px-6 lg:px-8">
       <div className="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
         <div>
           <h1 className="block text-3xl font-bold sm:text-4xl lg:text-5xl lg:leading-tight">

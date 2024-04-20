@@ -48,18 +48,18 @@ const Navbar = () => {
 
   return (
 
-    <div className=" fixed navbar bg-gradient-to-r from-cyan-900 to-cyan-950 "
+    <div className=" fixed navbar bg-white "
     style={{ borderBottom: "1.4px solid #a4a4a4" }}>
        {token && (
        <div>
       {/* Menu Icon */}
-      <FiMenu className="cursor-pointer" size={30} onClick={toggleSidebar} />
+      <FiMenu className="cursor-pointer " color="#6d28d9" size={40} onClick={toggleSidebar} />
 
       {/* Sidebar */}
       {sidebarOpen && (
         <div
           ref={sidebarRef}
-          className="fixed top-0 left-0 h-full w-44 bg-black bg-opacity-70 backdrop-blur-sm  p-4 flex flex-col"
+          className="fixed top-0 left-0 h-full w-44 bg-black  bg-opacity-70 backdrop-blur-sm  p-4 flex flex-col"
         >
           <ul className=" space-y-8 mt-7">
             <li>
@@ -97,17 +97,17 @@ const Navbar = () => {
       )}
 
       {/* Rest of Navbar */}
-      <div className=" h-10">
+      <div className="  ml-3 h-10">
       <Image
-      src="/images/logo.png"
-      width={200}
-      height={190}
+      src="/images/bill.png"
+      width={60}
+      height={50}
       alt="logo"
     />
   </div>
       <div className="flex-1">
-        <Link href={token ? "/dashboard" : "/ "} className="btn btn-ghost normal-case text-4xl text-primary">
-          Godawn
+        <Link href={token ? "/dashboard" : "/ "} className="btn btn-ghost normal-case text-4xl text-blue-700 mt-3">
+        BillBlaze
         </Link>
       </div>
       <div className="flex-none gap-2">
@@ -137,7 +137,7 @@ const Navbar = () => {
         <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
             {/* <div className="w-10 rounded-full"> */}
-                <PiUser size={28} />
+                <PiUser className="rounded-2xl" color="#6d28d9"  size={40} />
               {/* <img
                 alt="Tailwind CSS Navbar component"
                 src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
