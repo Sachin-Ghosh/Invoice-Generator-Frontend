@@ -1,3 +1,4 @@
+// pages/invoice.js
 import React, { useState } from 'react';
 // import InvoicePDF from './InvoicePDF';
 import { showAlert } from '@/utils/showAlert';
@@ -119,7 +120,7 @@ export default function Invoice() {
       <div>
         <label htmlFor="number" className="block text-black text-sm font-medium ">Invoice No:</label>
         <input
-          type="number"
+          type="text"
           id="number"
           value={number}
           onChange={(e) => setNumber(e.target.value)}

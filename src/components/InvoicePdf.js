@@ -226,7 +226,7 @@ export default function InvoicePDF({ invoice }) {
           }
         </PDFDownloadLink>
 
-        <PDFViewer width="200%" height="350%">
+        <PDFViewer width="200%" height="400%">
           <PDF />
         </PDFViewer>
       </div>
