@@ -109,7 +109,7 @@ const handleChange = (e) => {
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
           backgroundImage:
-            "url(https://www.storeplan.net.au/wp-content/uploads/2017/04/Pallet-Racking-in-Sydney_edited_website.jpg)",
+            "url(https://plus.unsplash.com/premium_photo-1661781334612-97098471e818?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG9ubGluZSUyMHRyYW5zYWN0aW9ufGVufDB8fDB8fHww)",
           filter: "blur(8px)",
         }}
       ></div>

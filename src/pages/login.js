@@ -67,11 +67,14 @@ export default function Login() {
       </Head>
 
       {/* Left Section */}
-      <div className="lg:flex w-1/2 hidden bg-gray-500 bg-no-repeat bg-cover relative items-center" style={{backgroundImage: "url(https://images.unsplash.com/photo-1577495508048-b635879837f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80)"}}>
+      <div className="lg:flex w-1/2 hidden bg-gray-500 bg-no-repeat bg-cover relative items-center" style={{backgroundImage: "url(https://media.istockphoto.com/id/1336136316/photo/woman-online-shopping-on-smart-phone-fashion-clothes-at-home.jpg?s=612x612&w=0&k=20&c=PYDR6zm5uC84qF-6a1dI8G5uXWrTg0wWMcjHSewsAM8=)"}}>
                 <div className="absolute bg-black opacity-60 inset-0 z-0"></div>
-                <div className="w-full px-24 z-10">
-                    <h1 className="text-5xl font-bold text-left tracking-wide">Keep it special</h1>
-                    <p className="text-3xl my-4">Capture your personal memory in a unique way, anywhere.</p>
+                <div className="w-auto px-10 py-10 z-10 bg-white bg-opacity-85 rounded-3xl">
+                  <div className='flex align-middle'>
+                    <h1 className="text-5xl font-bold text-left tracking-wide text-purple-500">Bill</h1>
+                    <h1 className="text-5xl font-bold text-left tracking-wide text-violet-400">Blaze</h1>
+                    </div>
+                    <p className="text-3xl  text-black my-4">"Keep your transition in check"</p>
                 </div>
                 <div className="bottom-0 absolute p-4 text-center right-0 left-0 flex justify-center space-x-4">
                     <span>
@@ -90,7 +93,7 @@ export default function Login() {
             </div>
 
       {/* Right Section */}
-      <div className="lg:w-1/2 w-full flex items-center bg-gray-900 bg-no-repeat bg-cover relative" style={{backgroundImage: "url(https://images.unsplash.com/photo-1486825586573-7131f7991bdd?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29uYWx8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60)"}}>
+      <div className="lg:w-1/2 w-full flex items-center bg-gray-900 bg-no-repeat bg-cover relative" style={{backgroundImage: "url()"}}>
       <div className="absolute bg-black opacity-60 inset-0 z-0"></div>
         {/* Your right section code */}
         <div className="w-full px-24 z-10">

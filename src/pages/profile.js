@@ -23,7 +23,7 @@ const ProfilePage = () => {
 
 
   return (
-    <div className=" bg-gradient-to-r from-cyan-900 to-cyan-950 min-h-screen mx-auto px-4 py-8 select-none">
+    <div className=" bg-gradient-to-r from-violet-800 to-purple-300  min-h-screen mx-auto px-4 py-8 select-none">
       <div className="text-sm px-8 breadcrumbs">
         <ul>
           <li>
@@ -33,18 +33,18 @@ const ProfilePage = () => {
         </ul>
       </div>
       <div className="px-8 py-8 w-1/2 ml-32 ">
-        <div className="card rounded bg-white ">
+        <div className="card rounded bg-gradient-to-r from-purple-300  to-white ">
           <div className="card-body">
-            <h1 className=" text-bold shadow-2xl  bg-slate-500  rounded-lg  pt-4 mt-4 ml-2 pb-5 pr-5 pl-5 text-5xl text-white text font-semibold mb-6">
+            <h1 className=" text-bold shadow-2xl  rounded-lg bg-gradient-to-r from-white to-purple-300 pt-4 mt-4 ml-2 pb-5 pr-5 pl-5 text-5xl text-black text font-semibold mb-6">
               PROFILE
             </h1>
-            <div className=' pl-8 pt-4 pb-4 rounded-lg bg-slate-500'>
-            <p className=" text-white text-xl font-semibold mb-2">
+            <div className=' pl-8 pt-4 pb-4 rounded-lg bg-gradient-to-r from-white to-purple-300'>
+            <p className=" text-black text-xl font-semibold mb-2">
               Company Name: {authUser?.companyName}
             </p>
-            <p className="mb-2 text-white text-xl font-semibold">Role: {authUser?.role}</p>
-            <p className="mb-2  text-white text-xl font-semibold">Email ID: {authUser?.email}</p>
-            <p className="mb-2 text-white text-xl font-semibold">Phone Number: {authUser?.phoneNumber}</p>
+            <p className="mb-2 text-black text-xl font-semibold">Role: {authUser?.role}</p>
+            <p className="mb-2  text-black text-xl font-semibold">Email ID: {authUser?.email}</p>
+            <p className="mb-2 text-black text-xl font-semibold">Phone Number: {authUser?.phoneNumber}</p>
           </div>
           </div>
         </div>

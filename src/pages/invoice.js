@@ -63,15 +63,15 @@ export default function Invoice() {
 
   return (
     
-    <div className=" bg-gradient-to-r from-violet-800 to-purple-300  gap-x-60 px-4 py-8">
-     <div className='mt-14'>
-      <h1 className=' text-bold  bg-gradient-to-r from-white to-purple-300 bg-opacity-65 gap-4 rounded-lg pt-4 mt-4 ml-4 pb-5 pr-5 pl-5 text-3xl text-neutral font-semibold mb-6 flex align-middle'>
+    <div className=" select-none bg-gradient-to-r from-violet-800 to-purple-300  gap-x-40 px-4 py-8">
+     <div className='mt-14 '>
+      <h1 className=' text-bold  bg-white gap-4 rounded-lg pt-5 ml-4 pb-5 pr-5 pl-5 text-3xl text-neutral font-semibold mb-6 flex align-middle'>
         <LiaFileInvoiceDollarSolid size={45} />BILL GENERATOR</h1>
    </div>
       {/* Form Section */}
-      <div className='flex align-middle gap-x-60 px-4 py-8 '>
-      <div className=" w-80  bg-white">
-    <div className="p-8 rounded-lg shadow-lg">
+      <div className='flex align-middle px-4 py-8 '>
+      <div className=" w-100 ml-36 bg-gradient-to-r from-white to-purple-300">
+    <div className="p-8 rounded-lg  w-100 shadow-lg">
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
         <label htmlFor="customerName" className="block text-sm font-medium text-black">Customer Name:</label>
@@ -169,8 +169,7 @@ export default function Invoice() {
     </form>
     </div>
       </div>
-      <div className="w-1/2 mt-24">
-      {/* <div className="h-full flex items-center justify-center"> */}
+      <div className=" h-full w-full  flex  items-center justify-center ">
     <InvoicePDF
         invoice={{
           customerName,
@@ -184,7 +183,6 @@ export default function Invoice() {
           paymentStatus,
         }}
       />
-      {/* </div> */}
       </div>
       </div>
   </div>
