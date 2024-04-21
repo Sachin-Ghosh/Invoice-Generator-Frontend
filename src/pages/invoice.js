@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 // import InvoicePDF from './InvoicePDF';
+import { showAlert } from '@/utils/showAlert';
 import { LiaFileInvoiceDollarSolid } from "react-icons/lia";
 
 import dynamic from 'next/dynamic';
@@ -54,9 +55,11 @@ export default function Invoice() {
       }
       const data = await response.json();
       console.log(data);
+      showAlert('Invoice generated successfully!', 'success');
       // Handle success or display the generated invoice
     } catch (error) {
       console.error('Error generating invoice:', error);
+      showAlert('Error generating Invoice!', 'error');
       // Handle error
     }
   };
