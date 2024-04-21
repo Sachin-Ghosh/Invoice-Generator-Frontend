@@ -74,7 +74,7 @@ export default function Login() {
                     <h1 className="text-5xl font-bold text-left tracking-wide text-purple-500">Bill</h1>
                     <h1 className="text-5xl font-bold text-left tracking-wide text-violet-400">Blaze</h1>
                     </div>
-                    <p className="text-3xl  text-black my-4">"Keep your transition in check"</p>
+                    <p className="text-3xl  text-black my-4">&quot;Keep your transition in check&quot;</p>
                 </div>
                 <div className="bottom-0 absolute p-4 text-center right-0 left-0 flex justify-center space-x-4">
                     <span>
