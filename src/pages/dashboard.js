@@ -116,9 +116,9 @@ const Dashboard = () => {
 
 
   return (
-    <div className="bg-gradient-to-r from-violet-800 to-purple-300  min-h-screen mx-auto px-8 py-16 ">
+    <div className="bg-gradient-to-r from-violet-800 to-purple-300 select-none min-h-screen mx-auto px-8 py-16 ">
       
-      <h1 className=" text-bold  bg-gradient-to-r from-white to-purple-300 bg-opacity-65 rounded-lg pt-4 mt-4 ml-4 pb-5 pr-5 pl-5 text-3xl text-neutral font-semibold mb-6 flex align-middle">
+      <h1 className=" text-bold  bg-white   rounded-lg pt-4 mt-7 ml-3 pb-5 pr-5 pl-5 text-3xl text-neutral font-semibold mb-6 flex align-middle">
           <MdDashboardCustomize   size={45}/>
         ADMIN DASHBOARD</h1>
         {/* {isLoggedIn && (
@@ -128,7 +128,7 @@ const Dashboard = () => {
         )} */}
      
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="bg-gradient-to-r from-purple-300  to-white p-6 rounded-lg shadow-md">
           <h2 className="text-xl text-black bg-gradient-to-r from-white to-purple-300 rounded-xl pl-3 mb-3 pb-2 pt-2 shadow-2xl font-bold">
             Invoice Overview
           </h2>
@@ -141,7 +141,7 @@ const Dashboard = () => {
 
               {/* <p className="text-2xl font-bold text-blue-600">{inventoryOverview.totalProducts}</p> */}
             </div>
-            <div className="bg-gradient-to-r from-white to-purple-300 rounded-xl p-3 shadow-2xl">
+            <div className="bg-gradient-to-r from-white to-purple-300 rounded-xl p-3  ml-9 shadow-2xl">
               <h3 className="text-lg font-semibold text-black">
                 Total Products :
               </h3>
@@ -149,7 +149,7 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        {/* <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-xl text-white bg-slate-500 rounded-xl pl-3 mb-3 shadow-2xl pb-2 pt-2 font-bold">
             Recent Activities
           </h2>
@@ -163,11 +163,11 @@ const Dashboard = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
       </section>
 
       <section className="mt-10 mb-8 flex justify-start items-center ">
-        <div className='rounded-3xl bg-white  '>
+        <div className='rounded-3xl bg-gradient-to-r from-purple-300  to-white '>
         <label className="input input-bordered flex items-center gap-2 bg-transparent text-black">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70"><path fillRule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clipRule="evenodd" /></svg>
           <input type="text" className="grow text-gray-800 placeholder:text-black placeholder:opacity-45" placeholder="Search by Company name" value={searchQuery} onChange={handleSearch} />
@@ -176,7 +176,7 @@ const Dashboard = () => {
         </div>
       </section>
       <section>
-      <div className="bg-white p-6 rounded-lg shadow-md">
+      <div className="bg-gradient-to-r from-purple-300  to-white p-6 rounded-lg shadow-md mt-5">
         <h2 className="text-xl text-black bg-gradient-to-r from-white to-purple-300 rounded-xl pl-3 mb-3 shadow-2xl pb-2 pt-2 font-bold">Latest Invoices</h2>
         
         {filteredProducts.length > 0 ? (

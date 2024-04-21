@@ -221,7 +221,7 @@ export default function InvoicePDF({ invoice }) {
             loading ? (
               "Loading document..."
             ) : (
-              <button className="btn btn-sm mb-2">Download</button>
+              <button className="btn btn-sm bg-white text-black mb-2">Download</button>
             )
           }
         </PDFDownloadLink>

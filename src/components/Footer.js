@@ -20,10 +20,10 @@ const Footer = () => {
       </div>
 
           <h1
-            className="flex-none text-xl font-semibold"
+            className="flex-none text-xl  mt-4 font-semibold"
             aria-label="Brand"
           >
-           Godawn
+        BillBlaze
           </h1>
         {/* End Col */}
 
